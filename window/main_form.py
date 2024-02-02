@@ -115,7 +115,7 @@ class Calendar:
         if not is_init:
             self.window = Tk()
             self.window.overrideredirect(True)  # 隐藏标题栏
-            self.window.attributes('-topmost', True)  # 置顶
+            # self.window.attributes('-topmost', True)  # 置顶
             self.window.attributes('-alpha', self.transparency)  # 窗口透明度
             self.window.config(bg='black')  # 背景色为黑
             self.window.bind('<Double-Button-1>', self.select)  # 绑定按键
